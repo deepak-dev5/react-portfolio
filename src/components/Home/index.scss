@@ -1,0 +1,77 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 48%;
+    transform: translateY(-50%);
+    width: 60%;
+    max-width: 90%;
+  }
+  h1 {
+    color: #fff;
+    font-size: 55px;
+    margin: 0;
+    font-family: "Coolvetica";
+    font-weight: 400;
+
+    &::before {
+      content: "<h1>";
+      font-family: "La Belle Aurore";
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -20px;
+      left: 15px;
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: "</h1>";
+      font-family: "La Belle Aurore";
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 35px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.5s backwards;
+      opacity: 0.6;
+    }
+
+    img {
+      width: 60px;
+      margin-left: 20px;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-delay: 1s;
+    }
+  }
+  h2 {
+    color: #bdbdbd;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+  .contact-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.5s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
+}
