@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faFile,
   faHome,
+  faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -34,6 +35,14 @@ const Sidebar = () => {
             to="/about"
           >
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          </NavLink>
+          <NavLink
+            exact="true"
+            activeclassname="active"
+            className="portfolio-link"
+            to="/portfolio"
+          >
+            <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
           </NavLink>
           <NavLink
             exact="true"
@@ -69,7 +78,11 @@ const Sidebar = () => {
             </a>
           </li>
           <li>
-            <a target="_blank" rel="noreferrer" href="/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://drive.google.com/file/d/15-LgZ8gjqwvWGv5REREAmsHZCRydF2Q0/view?usp=drivesdk"
+            >
               <FontAwesomeIcon icon={faFile} color="#4d4d4e" />
             </a>
           </li>

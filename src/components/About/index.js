@@ -30,14 +30,14 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
+              //strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
+              strArray={"About me".split("")}
               idx={15}
             />
           </h1>
           <p>
-            Highly skilled and accomplished senior software engineer with over 4
-            years of experience in the software industry. 4+ years of
-            Professional Experience in Software Development that includes java
+            Highly skilled and accomplished senior software engineer with over
+            4+ years of experience in the software industry that includes java
             developer, Enterprise Application Integration, requirement analysis,
             design, development, testing, version control, and maintenance of
             applications of travel and banking domain.
